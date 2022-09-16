@@ -12,9 +12,10 @@ public class SumAverageRunningInt {
             sum += number;
 
         }
-        double average = (double) sum / upperBound;
+        int numbersFromLowerToUpper = upperBound - lowerBound + 1;
+        double average = (double) sum / numbersFromLowerToUpper;
 
-        System.out.println("The sum of 1 to 100 is " + sum);
+        System.out.println("The sum of " + lowerBound + " to " + upperBound + " is " + sum);
         System.out.println("The average is " + average);
     }
 }

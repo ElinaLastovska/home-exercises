@@ -63,10 +63,16 @@ public class CalculateArea {
 
         radius = BigDecimal.valueOf(keyboard.nextDouble());
 
+        if (radius.compareTo(BigDecimal.ZERO) > 0) {
 
-        // Display output
-        System.out.println("The circle's area is "
-                + Geometry.areaOfCircle(radius));
+
+            // Display output
+            System.out.println("The circle's area is "
+                    + Geometry.areaOfCircle(radius));
+
+        } else {
+            System.out.println("Error! Radius can not be 0 or less than 0!");
+        }
     }
 
     public static void calculateRectangleArea() {
@@ -83,8 +89,18 @@ public class CalculateArea {
 
         width = BigDecimal.valueOf(keyboard.nextDouble());
 
-        System.out.println("The rectangle's area is "
-                + Geometry.areaOfRectangle(length, width));
+
+        if (length.compareTo(BigDecimal.ZERO) > 0 && width.compareTo(BigDecimal.ZERO) > 0) {
+
+
+            System.out.println("The rectangle's area is "
+                    + Geometry.areaOfRectangle(length, width));
+
+        } else {
+            System.out.println("Error! Length and width can not be 0 or less than 0!");
+        }
+
+
     }
 
     public static void calculateTriangleArea() {
@@ -105,7 +121,16 @@ public class CalculateArea {
         height = BigDecimal.valueOf(keyboard.nextDouble());
 
 
-        System.out.println("The triangle's area is "
-                + Geometry.areaOfTriangle(base, height));
+        if (base.compareTo(BigDecimal.ZERO) > 0 && height.compareTo(BigDecimal.ZERO) > 0) {
+
+
+            System.out.println("The triangle's area is "
+                    + Geometry.areaOfTriangle(base, height));
+
+        } else {
+            System.out.println("Error! Base and height can not be 0 or less than 0!");
+        }
+
+
     }
 }

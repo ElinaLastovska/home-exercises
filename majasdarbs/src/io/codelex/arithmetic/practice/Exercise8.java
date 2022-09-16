@@ -4,8 +4,6 @@ import java.util.Scanner;
 
 public class Exercise8 {
 
-    static double basePay = 0;
-    static double hr = 0;
 
     public static void main(String[] args) {
 
@@ -14,22 +12,23 @@ public class Exercise8 {
 
         for (int i = 1; i < 4; i++) {
 
+
             System.out.println("Hours and base pay for employ " + i);
 
             System.out.println("Input base pay");
-            basePay = numberIn.nextDouble();
+            double basePay = numberIn.nextDouble();
 
             System.out.println("Input worked hours");
-            hr = numberIn.nextDouble();
+            double hr = numberIn.nextDouble();
 
 
-            calculatePay();
+            calculatePay(basePay, hr);
         }
 
 
     }
 
-    public static void calculatePay() {
+    public static void calculatePay(double basePay, double hr) {
 
         double hrOvertime = 0;
         double finalPay = 0;

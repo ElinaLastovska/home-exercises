@@ -4,11 +4,13 @@ import java.math.BigDecimal;
 
 class Geometry {
     static double areaOfCircle(BigDecimal radius) {
-        BigDecimal b1 = new BigDecimal("2");
+
+
         BigDecimal b2 = new BigDecimal("3.14159265359");
-        BigDecimal b3 = b1.multiply(b2);
-        BigDecimal b4 = radius.multiply(b3);
-        double circleAre = b4.doubleValue();
+        BigDecimal b4 = radius.multiply(radius);
+        BigDecimal b3 = b4.multiply(b2);
+
+        double circleAre = b3.doubleValue();
         return circleAre;
     }
 
