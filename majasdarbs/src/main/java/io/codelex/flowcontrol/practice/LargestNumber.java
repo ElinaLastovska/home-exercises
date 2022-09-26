@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 public class LargestNumber {
 
-    //TODO: Write a Java program to to find the largest of three numbers.
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
 
@@ -17,32 +16,16 @@ public class LargestNumber {
         System.out.print("Input the 3rd number: ");
         int num3 = in.nextInt();
 
-        if (num1 > num2) {
+        if (num1 > num2 && num1 > num3) {
 
-            if (num1 > num3) {
-                System.out.println("largest number is 1st");
-            }
-
+            System.out.println("largest number is 1st");
 
         } else if (num3 > num2) {
             System.out.println("largest number is 3rd");
 
-
-        } else if (num3 < num2) {
+        } else {
             System.out.println("largest number is 2nd");
         }
-
-
-
-
-
-
-        /*
-        todo - expected output:
-        Input the 1st number: 25
-        Input the 2nd number: 78
-        Input the 3rd number: 87
-         */
     }
 
 }

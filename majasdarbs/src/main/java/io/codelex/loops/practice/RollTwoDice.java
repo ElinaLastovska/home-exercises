@@ -1,29 +1,29 @@
 package io.codelex.loops.practice;
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class RollTwoDice {
     public static void main(String[] args) {
 
         int values = 0;
-        int sum;
+
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter desired sum: ");
-        sum = scanner.nextInt();
+        int sum = scanner.nextInt();
 
+        int randomValue1;
+        int randomValue2;
 
         do {
 
             if (sum > 1 && sum <= 12) {
 
-                int min = 1;
-                int max = 6;
-
-                int getRandomValue = (int) (Math.random() * (max - min)) + min;
-                int getRandomValue2 = (int) (Math.random() * (max - min)) + min;
-
-                values = getRandomValue + getRandomValue2;
-                System.out.println("You rolled a " + getRandomValue + " and " + getRandomValue2 + " = " + values);
+                randomValue1 = rollDice();
+                randomValue2 = rollDice();
+                
+                values = randomValue1 + randomValue2;
+                System.out.println("You rolled a " + randomValue1 + " and " + randomValue2 + " = " + values);
 
 
             } else {
@@ -31,5 +31,13 @@ public class RollTwoDice {
                 break;
             }
         } while (values != sum);
+    }
+
+    static int rollDice() {
+        int min = 1;
+        int max = 6;
+        Random random = new Random();
+        return random.nextInt(max) + min;
+
     }
 }
