@@ -5,28 +5,27 @@ import java.util.Scanner;
 public class Exercise5 {
     public static void main(String[] args) {
 
+        final int totalLength = 30;
+
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter first word:");
 
         String firstWord = scanner.nextLine();
 
-        System.out.println("Enter Enter second word word:");
+        System.out.println("Enter second word word:");
 
         String secondWord = scanner.nextLine();
 
         String both = firstWord + secondWord;
 
-        int leng = 30 - both.length();
+        int length = totalLength - both.length();
 
+        StringBuilder dot = new StringBuilder(".");
 
-        StringBuilder punkt = new StringBuilder(".");
-        
         if (both.length() < 30) {
 
-
-            punkt.append(String.valueOf(punkt).repeat(Math.max(0, leng)));
-            System.out.print(firstWord + punkt + secondWord);
-
+            dot.append(String.valueOf(dot).repeat(Math.max(0, length)));
+            System.out.print(firstWord + dot + secondWord);
 
         } else {
             System.out.println("not in a range");
