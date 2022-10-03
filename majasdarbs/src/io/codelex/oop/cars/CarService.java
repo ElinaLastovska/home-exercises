@@ -103,7 +103,6 @@ public class CarService {
     public static void returnCarsByManufacturer(String manufacturerName) {
         for (Car b : cars) {
             if (Objects.equals(b.getCarsManufacturer(), manufacturerName)) {
-                System.out.print("User found in the collection");
                 CarsByManufacturer.add(b);
             }
         }
@@ -112,7 +111,7 @@ public class CarService {
 
 //    public static void returnCarsByManufacturerYear(int year) {
 //        for (Car b : cars) {
-//            if (b.getCarsManufacturer().matches(returnManufacturerByYear(year))) {
+//            if (b.getCarsManufacturer().(returnManufacturerByYear(year))) {
 //
 //                CarsByManufacturerYear.add(b);
 //            }
