@@ -3,6 +3,8 @@ package io.codelex.polymorphism.practice.exercise1;
 public interface Car {
 
 
+    String showCurrentSpeed();
+
     void speedUp();
 
     void slowDown();
@@ -10,8 +12,6 @@ public interface Car {
     default void startEngine() {
         System.out.println("Rrrrrrr.....");
     }
-
-    String showCurrentSpeed();
 
 
 }

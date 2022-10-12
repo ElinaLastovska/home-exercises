@@ -40,26 +40,17 @@ public class DragRace {
         cars.add(e);
         cars.add(f);
 
+
         for (int i = 0; i <= 10; i++) {
             for (Car z : cars) {
                 z.speedUp();
                 if (i == 3 && z instanceof BoostCar) {
                     ((BoostCar) z).useNitrousOxideEngine();
                 }
-                // System.out.println(z.showCurrentSpeed());
-                // System.out.println(z);
+                
             }
 
         }
-        // System.out.println(dragRaceList);
-
-//        List<Car> fastestCar = cars.stream().max(Comparator.comparing(Car::showCurrentSpeed)).stream().toList();
-////
-//        System.out.println(fastestCar);
-//
-
-//        List<Car> sortedList = cars.stream().sorted().toList();
-//        sortedList.forEach(System.out::println);
 
 
     }
