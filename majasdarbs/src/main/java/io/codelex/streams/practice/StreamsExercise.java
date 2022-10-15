@@ -5,6 +5,8 @@ import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
+import static java.util.stream.Collectors.groupingBy;
+
 /**
  * TODO - search for StreamsExerciseTest and make all tests pass
  */
@@ -74,8 +76,8 @@ public class StreamsExercise {
     }
 
     public static Map<Boolean, List<User>> partionUsersByGender(List<User> users) {
-        throw new UnsupportedOperationException();
-//        return users.stream().collect(Collectors.toMap(User::isMale, Function.identity()));
+
+        return users.stream().collect(groupingBy(User::isMale));
     }
 
     public static Map<Integer, List<User>> groupByAge(List<User> users) {
