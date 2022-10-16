@@ -10,6 +10,6 @@ public class CreditCard extends Card {
         if (balance > 10000) {
             System.out.println("Warning: Too much money");
         }
-        this.balance = balance + amount;
+        super.addMoney(amount);
     }
 }

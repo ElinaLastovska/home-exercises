@@ -5,8 +5,21 @@ public class BasketTest {
         Mushroom a = new Mushroom();
         Apple b = new Apple();
 
-        Basket<Object> c = new Basket<>(b);
-        c.removeFromBasket(b);
+        Basket<Apple> c = new Basket<>();
+
+//
+//        c.addToBasket(b);
+//        c.removeFromBasket(b);
+//        c.addToBasket(b);
+//        c.addToBasket(b);
+//        c.addToBasket(b);
+//        c.addToBasket(b);
+//        c.addToBasket(b);
+//        c.addToBasket(b);
+//        c.addToBasket(b);
+//        c.addToBasket(b);
+//        c.addToBasket(b);
+//        c.addToBasket(b);
         System.out.println(c);
     }
 

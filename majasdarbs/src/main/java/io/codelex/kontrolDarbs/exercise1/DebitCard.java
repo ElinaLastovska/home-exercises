@@ -12,7 +12,7 @@ public class DebitCard extends Card {
         if (amount > balance) {
             throw new NotEnoughFundsException("its not possible to take out the amount you are requesting");
         }
-        this.balance = balance - amount;
+        super.drawMoney(amount);
 
         if (balance < 100) {
             System.out.println("Warning: Low funds");

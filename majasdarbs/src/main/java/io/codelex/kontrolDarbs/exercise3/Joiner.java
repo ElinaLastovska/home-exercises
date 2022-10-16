@@ -1,22 +1,21 @@
 package io.codelex.kontrolDarbs.exercise3;
 
-import java.util.function.Function;
-
 public class Joiner<T> {
-    private final T first;
     private final String separator;
 
-    private final Function<T, String> Joiner;
 
-    public Joiner(T first, String seperator, Function<T, String> joiner) {
-        this.first = first;
-        this.separator = seperator;
-        Joiner = joiner;
+    public Joiner(String separator) {
+        this.separator = separator;
     }
 
-    public String join(int number) {
+    @SafeVarargs
+    public final String join(T... args) {
 
-        String a = first.toString() + separator;
-        return a.repeat(number);
+        String result = "", prefix = "";
+        for (T s : args) {
+            result += prefix + s;
+            prefix = separator;
+        }
+        return result;
     }
 }
