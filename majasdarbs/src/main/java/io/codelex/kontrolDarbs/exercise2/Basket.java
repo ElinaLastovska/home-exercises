@@ -1,20 +1,21 @@
 package io.codelex.kontrolDarbs.exercise2;
 
-public class Basket<T> {
-    private final T item;
+import java.util.ArrayList;
+import java.util.List;
 
+public class Basket<T> {
+    private final List<T> basket = new ArrayList<>(10);
     private int numberOfItems;
 
-
-    public Basket(T item) {
-        this.item = item;
+    public Basket() {
     }
-
 
     public void addToBasket(T item) {
         if (numberOfItems == 10) {
             throw new BasketFullException("Basket is full!");
         }
+
+        basket.add(item);
         numberOfItems = numberOfItems + 1;
     }
 
@@ -22,6 +23,7 @@ public class Basket<T> {
         if (numberOfItems == 0) {
             throw new BasketEmptyException("Basket is empty!");
         }
+        basket.remove(item);
         numberOfItems = numberOfItems - 1;
     }
 
@@ -30,18 +32,10 @@ public class Basket<T> {
         return numberOfItems;
     }
 
-    public void setNumberOfItems(Integer numberOfItems) {
-        this.numberOfItems = numberOfItems;
-    }
-
-    public T getItem() {
-        return item;
-    }
 
     @Override
     public String toString() {
-        return "Basket{" +
-                "numberOfItems= " + numberOfItems +
-                '}';
+
+        return "Basket contains: " + numberOfItems + " " + basket.get(0);
     }
 }
