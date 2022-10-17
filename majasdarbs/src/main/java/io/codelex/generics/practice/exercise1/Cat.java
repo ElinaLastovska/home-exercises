@@ -1,4 +1,4 @@
-package io.codelex.generics.practice;
+package io.codelex.generics.practice.exercise1;
 
 public class Cat extends Animals {
     public Cat(String name, Integer age) {
