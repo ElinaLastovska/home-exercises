@@ -1,4 +1,4 @@
-package io.codelex.generics.practice;
+package io.codelex.generics.practice.exercise1;
 
 import java.util.ArrayList;
 import java.util.List;

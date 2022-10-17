@@ -1,4 +1,4 @@
-package io.codelex.generics.practice;
+package io.codelex.generics.practice.exercise1;
 
 public abstract class Animals {
     String name;

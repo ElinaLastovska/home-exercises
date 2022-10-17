@@ -2,6 +2,7 @@ package io.codelex.generics.practice.exercise4;
 
 class Zoo {
     void feedAnimal(Cage cage) {
+        feed(cage.getAnimal().lunchBag, cage.getAnimal());
         /*code given in each section*/
     }
 
@@ -10,6 +11,7 @@ class Zoo {
     }
 
     void manage() {
+
         /*your code here*/
     }
 }
