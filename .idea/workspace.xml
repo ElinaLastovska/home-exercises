@@ -5,33 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="35b0ae9f-3a0c-401a-9c50-95070c60d285" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/majasdarbs/src/main/java/io/codelex/simplified/NumberOperations.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/majasdarbs/src/main/java/io/codelex/simplified/ScooterRental.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/majasdarbs/src/main/java/io/codelex/simplified/TheaterTickets.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/home-exercises.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/majasdarbs/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/majasdarbs/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/majasdarbs/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/majasdarbs/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/majasdarbs/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_12_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/majasdarbs/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/majasdarbs/.idea/libraries/Maven__org_hamcrest_hamcrest_2_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/majasdarbs/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_9_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/majasdarbs/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_9_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/majasdarbs/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/majasdarbs/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/majasdarbs/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/majasdarbs/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/majasdarbs/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/majasdarbs/src/main/java/io/codelex/kontrolDarbs/Exercise5.java" beforeDir="false" afterPath="$PROJECT_DIR$/majasdarbs/src/main/java/io/codelex/kontrolDarbs/Exercise5.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/majasdarbs/src/main/main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,18 +30,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/PC/Documents/MajasDarbiJava/java-syllabus",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/PC/Documents/MajasDarbiJava/java-syllabus&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Application.TheaterTickets">
     <configuration name="NumberOperations" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="io.codelex.simplified.NumberOperations" />
@@ -126,6 +100,8 @@
       <updated>1666095764609</updated>
       <workItem from="1666095766048" duration="108000" />
       <workItem from="1666095888961" duration="5727000" />
+      <workItem from="1666251277920" duration="12000" />
+      <workItem from="1666370897079" duration="866000" />
     </task>
     <servers />
   </component>
