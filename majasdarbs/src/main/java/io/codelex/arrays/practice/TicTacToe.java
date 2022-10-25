@@ -11,10 +11,17 @@ public class TicTacToe {
         initBoard();
 
         while (game) {
+
             displayBoard();
+            ifEndGame();
             game(board, "Player1");
+
             displayBoard();
+            ifEndGame();
+
             game(board, "Player2");
+
+
         }
     }
 
@@ -57,6 +64,16 @@ public class TicTacToe {
                 && (board[1][2] == board[2][0]) && (board[2][0] == board[2][1]) && (board[2][1] == board[2][2]);
 
     }
+    private static Boolean ifEndGame(){
+        if (checkTie(board)) {
+            System.out.println("Its a tie!");
+            return game = false;
+        }else  if (checkWinner(board)) {
+            System.out.println("victory!");
+            return game = false;
+        }
+        return game = true;
+    }
     public static void game(char[][] board, String user) {
 
         char symbol = 'x';
@@ -66,7 +83,6 @@ public class TicTacToe {
         } else if (user.equals("Player2")) {
             symbol = 'O';
         }
-
         Scanner keyboard = new Scanner(System.in);
 
         System.out.println("choose row: ");
@@ -81,13 +97,7 @@ public class TicTacToe {
         } else {
             board[row][col] = symbol;
         }
-        if (checkTie(board)) {
-            System.out.println("Its a tie!");
-            game = false;
-        }
-        if (checkWinner(board)) {
-            System.out.println("victory!");
-            game = false;
-        }
+
+
     }
 }
