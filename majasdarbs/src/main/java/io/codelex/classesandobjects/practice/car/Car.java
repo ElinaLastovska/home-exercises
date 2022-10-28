@@ -1,7 +1,8 @@
 package io.codelex.classesandobjects.practice.car;
 
 public class Car {
-
+    private static final double HIGH_FUEL_CONSUMPTION = 15.0;
+    private static final double LOW_FUEL_CONSUMPTION = 5.0;
     private final double startKilometers; // Starting odometer reading
     private double endKilometers; // Ending odometer reading
     private double liters; // Liters of gas used between the readings
@@ -25,11 +26,11 @@ public class Car {
     }
 
     public boolean gasHog() {
-        return calculateConsumption() > 15.0;
+        return calculateConsumption() > HIGH_FUEL_CONSUMPTION;
     }
 
     public boolean economyCar() {
-        return calculateConsumption() < 5.0;
+        return calculateConsumption() < LOW_FUEL_CONSUMPTION;
     }
 
 
